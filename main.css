@@ -7,23 +7,33 @@ body{
     height:100%;
     background: linear-gradient(-45deg, #4498eb, #3a8af2, #3fd2e8, #88f0e1);
     background-size: 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 10s ease infinite;
+    overflow-x: hidden;
 }
 .gallery{
     display:inline-block;
     margin: 5px;
     justify-content: left;
     align-items: center;
+    border-radius: 10px 10px 10px 10px;
 }
 .gallery .description{
     text-align: center;
 }
-.gallery:hover{
+#msg:hover{
     border: 5px solid rgb(7, 19, 238);
 }
 #msg{
     position: fixed;
     right: 0;
+}
+#bell{
+    position: fixed;
+    right: 7%;
+     /*This has to be next to msg*/
+}
+#bell:hover{
+    border: 5px solid blue;
 }
 @keyframes gradient {
     0% {
@@ -57,11 +67,33 @@ body{
     animation: gradient 45s ease infinite;
     max-width: fit-content;
     max-height: fit-content;
+    border-radius: 10px 10px 10px 10px;
 }
 .images{
+    border-radius: 10px 10px 10px 10px;
     border: 7px solid rgb(43, 43, 226);
     margin: 2px;
 }
 .images:hover{
     border: 5px solid rgb(238, 18, 7);
+}
+.slide{
+    border-style: groove;
+    border-width: 5px;
+    border-color: rgb(212, 41, 32);
+    border-radius: 10px;
+    position: fixed;
+    right: 0.5%;
+    bottom: 0;
+    width: 1000px;
+    height: 500px;
+    background-image: url("https://i.imgur.com/5hrUbTe.jpg");
+    background-size: cover;
+    margin-bottom: 5px;
+    animation: slider 9s infinite linear;
+}
+@keyframes slider{
+    0%{background-image: url("https://i.imgur.com/5hrUbTe.jpg");background-size: 100% 100%;}
+    35%{background-image: url("https://i.imgur.com/xzx9fIU.jpg");background-size: 100% 100%;}
+    75%{background-image: url("blob:https://imgur.com/7b853b08-48f9-4e56-83cd-4043f5f68da0");background-size: 100% 100%;}
 }
