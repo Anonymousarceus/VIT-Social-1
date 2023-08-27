@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
-    <link rel ="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="gallery" id="vit">
+  <nav class="navbar navbar-expand navbar-light fixed-top bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="gallery" id="vit">
         <a target="_blank" href="vit.html">
-            <img src="vit-removebg-preview.png"  width="100" height="100">
-            <img src="logo.png" alt="pizza" width="200"></a>
-    </div>
-    <div class="gallery" id="msg">
+          <img src="vit-removebg-preview.png" width="50" height="50">
+          <img src="logo.png" alt="pizza" width="125"></a>
+      </div>
+      <div class="gallery" id="msg">
         <a target="_blank" href="msg.html">
-            <img src="msg-removebg-preview.png"  width="100" height="100">
+          <img src="msg-removebg-preview.png" width="50" height="50">
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            4+
+            <span class="visually-hidden">unread messages</span>
         </a>
-    </div>
-    <div id="bell" class="gallery">
+      </div>
+      <div id="bell" class="gallery">
         <a target="_blank" href="notification.html">
-            <img src="bell-removebg-preview.png"  width="100" height="100">
+          <img src="bell-removebg-preview.png" width="50" height="50">
+          <span
+            class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+            <span class="visually-hidden">New alerts</span>
+          </span>
         </a>
+      </div>
+      <div id="avatar" class="gallery">
+        <a target="_blank" href="avatar.html">
+          <img src="pfp.jpeg" alt="Avatar" class="avatar">
+        </a>
+      </div>
     </div>
-    <div class="profiles"><font color="cyan">
-        <h1>People you may know:</h1></font>
-        <div><a target="_blank" href="pitt.html">
-            <img src="pitt.jpg" class ="images" width="100" height="100"></a><br>
-        </div>
-        <div><a target="_blank" href="lana.html">
-            <img  src="lana.jpeg" width="100" class ="images" height="100"></a><br>
-        </div>
-        <div><a target="_blank" href="tom.html">
-            <img src="tom.jpeg" width="100"  class ="images" height="100"></a><br>
-        </div>
-        <div><a target="_blank" href="osama.html">
-            <img src="osama.jpeg" width="100" class ="images" height="100"></a><br>
-        </div>
+  </nav>
+
+
+
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="100">
+        <img src="vb3.jpg" class="d-block w-100" alt="1" width="750" height="500">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="vb2.jpg" class="d-block w-100" alt="2" width="750" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="vb1.jpeg" class="d-block w-100" alt="3" width="750" height="500">
+      </div>
+
     </div>
-    <div class="slide">
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
