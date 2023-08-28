@@ -1,16 +1,15 @@
-
 body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     width: 100vh;
-    height: 100vh;/*For covering whole page*/
-    background: linear-gradient(-45deg, #4498eb, #3a8af2, #3fd2e8, #88f0e1);
+    height: 100vh;
+    /*For covering whole page*/
+    background-image: linear-gradient(-45deg, #4498eb, #3a8af2, #3fd2e8, #88f0e1), url(vit.jpg);
     background-size: 400%;
     animation: gradient 10s ease infinite;
     max-width: 100%;
-    overflow-x: hidden;
 }
 .gallery {
     display: inline-block;
@@ -19,9 +18,11 @@ body {
     align-items: center;
     border-radius: 10px 10px 10px 10px;
 }
+
 .gallery .description {
     text-align: center;
 }
+
 #msg:hover {
     border: 5px solid rgb(7, 19, 238);
 }
@@ -31,31 +32,38 @@ body {
     right: 0;
     margin: 12px;
 }
+
 #bell {
     position: fixed;
     right: 3.5%;
     margin: 10px;
     /*This has to be next to msg*/
 }
+
 #avatar {
     position: fixed;
-    right: 8%;
+    right: 7.5%;
     margin: 10px;
     border-radius: 50%;
     background-image: url("pfp.jpg");
 }
+
 #avatar:hover {
     border: 5px solid blue;
 }
+
 .avatar {
     vertical-align: middle;
     width: 50px;
     height: 50px;
     border-radius: 50%;
- }
+}
+
 #bell:hover {
     border: 5px solid blue;
+    overflow: hidden;
 }
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -69,16 +77,33 @@ body {
         background-position: 0% 50%;
     }
 }
-.carousel-item{
+
+.carousel-item {
     max-width: fit-content !important;
     max-height: fit-content !important;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
-#carouselExampleInterval{
-    right:-100%;
-    margin: 10px;
+#carouselExampleInterval {
+    right: -100%;
+    margin-top: 15vh;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px #222;
+    overflow: hidden;
 }
+
 .bell:hover {
     border: 5px solid blue !important;
+    overflow: hidden;
 }
+
+#carouselExample {
+    right: 100%;
+    top: 100%;
+    margin-top: 15vh;
+    border-radius: 12px;
+    border: 5px solid blue !important;
+    box-shadow: 0px 2px 3px #222;
+}
+
